@@ -16,6 +16,7 @@ Plugin 'nanotech/jellybeans.vim'
 Plugin 'valloric/youcompleteme'                 "need to setting(reference youcompleteme)
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'majutsushi/tagbar'                      "need to ctag (apt-get install exuberant-ctags)
+Plugin 'townk/vim-autoclose'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
