@@ -13,8 +13,9 @@ Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'nanotech/jellybeans.vim'
-Plugin 'valloric/youcompleteme'
+Plugin 'valloric/youcompleteme'                 "need to setting(reference youcompleteme)
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'majutsushi/tagbar'                      "need to ctag (apt-get install exuberant-ctags)
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -52,5 +53,9 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
 "for color
 colorscheme jellybeans
+
+"for Tagbar
+nmap <F8> : TagbarToggle <CR> 
