@@ -38,6 +38,8 @@ set cindent					"c style
 set visualbell				"beep control
 set nobackup				"nobackup file
 set incsearch				"search gradually
+filetype indent on			"filetype indent
+set mouse=a				"cursor move with mouse
 "restore the edit locate
 au BufReadPost *
 \ if line("'\"") > 0 && line("'\"") <= line("$") |
